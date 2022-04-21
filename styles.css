@@ -2,10 +2,12 @@ body{
     font-family: 'Roboto', sans-serif;
     color: lightgray;
     text-align: center;
+    display: grid;
+    place-items: center;
     /* background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(122,6,170,1) 35%, rgba(0,212,255,1) 100%); */
 
 /* BG Color Animate */
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #00FFA3, #03E1FF, #DC1FFF);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -107,10 +109,6 @@ tr:nth-child(even) {
   }
 
 ul {
-    max-width: 200px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 40px;
     text-align: justify;
     list-style-position: inside;
 
@@ -134,7 +132,24 @@ footer {
   color: white;
   text-align: center;
 }
-
+/* 
 div{
     margin-bottom: auto;
+} */
+
+
+
+.card{
+    background-image: url(images/synths-med.jpeg);
+    background-size: cover;
+    height: 450px;
+    width: 300px;
+    border-radius: 0%;
+
+}
+
+.card-content{
+    position: relative;
+    align-content: center;
+    padding-top: 25%;
 }
