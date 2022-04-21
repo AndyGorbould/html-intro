@@ -9,6 +9,9 @@ body{
 /* BG Color Animate */
     background: linear-gradient(-45deg, #00FFA3, #03E1FF, #DC1FFF);
 	background-size: 400% 400%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
@@ -88,31 +91,7 @@ h2 {
 
 }
 
-.table-one{
-    border-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    width: 500px;
-}
 
-td{
-    padding: 15px 5px 15px 15px ;
-    text-align: justify;
-}
-tr:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-ul {
-    text-align: justify;
-    list-style-position: inside;
-
-}
 
 a:link, a:visited, a:hover, a:active {
     margin-top: 25px;
@@ -131,27 +110,62 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
+  padding-bottom: 10px;
 }
-/* 
-div{
-    margin-bottom: auto;
-} */
-
 
 
 .card{
     background-image: url(images/synths-med.jpeg);
     background-size: cover;
+    transition: all 0.3s ease-in-out;
+    filter: blur(5px);
     height: 450px;
     width: 300px;
-    border-radius: 0%;
-
+    border-radius: 18px 18px;
 }
 
+
+.card:hover{
+    transition: all 0.3s ease-in-out;
+    filter: blur(0px);
+}
+
+
 .card-content{
+    filter: brightness(100%);
     position: relative;
     align-content: center;
     padding-top: 25%;
     padding-left: 10%;
     padding-right: 10%;
+    overflow: hidden;
+}
+
+/* TABLE */
+.table-one{
+    border-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td{
+    padding: 15px 5px 15px 15px ;
+    text-align: justify;
+}
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+/* TABLE-END */
+
+ul {
+    text-align: justify;
+    list-style-position: inside;
+
 }
