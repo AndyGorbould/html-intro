@@ -2,8 +2,8 @@ body{
     font-family: 'Roboto', sans-serif;
     color: lightgray;
     text-align: center;
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
     /* background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(122,6,170,1) 35%, rgba(0,212,255,1) 100%); */
 
 /* BG Color Animate */
@@ -67,8 +67,8 @@ h2 {
 }
 
 .photo{
-    height: 35%;
-    width: 35%;
+    height: 28%;
+    width: 28%;
 }
 
 .under-construction {
@@ -114,22 +114,58 @@ footer {
 }
 
 
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .card{
-    background-image: url(images/synths-med.jpeg);
-    background-size: cover;
-    transition: all 0.3s ease-in-out;
-    filter: blur(5px);
     height: 450px;
     width: 300px;
     border-radius: 18px 18px;
+    margin: 50px;
 }
 
+.card-00{
+    background-image: url(images/synths-med.jpeg);
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    filter: blur(5px);
+}
+
+.card-01{
+    background-image: url(images/synths-med.jpeg);
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    filter: blur(5px);
+}
+
+.card-02{
+    background-image: url(images/synths-med.jpeg);
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    filter: blur(5px);
+}
+
+.card-03{
+    background-image: url(images/synths-med.jpeg);
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    filter: blur(5px);
+}
+
+.card-04{
+    background-image: url(images/synths-med.jpeg);
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    filter: blur(5px);
+}
 
 .card:hover{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
     filter: blur(0px);
 }
-
 
 .card-content{
     filter: brightness(100%);
